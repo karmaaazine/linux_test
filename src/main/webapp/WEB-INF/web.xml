@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee" version="5.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet> 
+   <servlet-name>liste</servlet-name> 
+   <servlet-class>com.mycompany.jakartaee.docker.tp.servlet.ListeEtudiantsServlet</servlet-class> 
+  </servlet> 
+  <servlet-mapping> 
+        <servlet-name>liste</servlet-name> 
+        <url-pattern>/etudiants</url-pattern> 
+  </servlet-mapping>
+ 
